@@ -56,7 +56,7 @@ L'interfaccia grafica è identica per entrambi i programmi ed è estremamente in
 3. Clicca sul tasto **'Decodifica'**: il testo del messaggio originale apparirà magicamente a schermo.
 
 <p align="center">
-  <img src="assets/interfaccia.png" alt="Interfaccia" width="200">
+  <img src="assets/interfaccia.png" alt="Interfaccia" width="400">
 </p>
 
 ---
