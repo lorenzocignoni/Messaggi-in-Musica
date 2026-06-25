@@ -1,8 +1,8 @@
 # 📜 Messaggi in Musica 🎼
 
-Benvenuto in **Messaggi in Musica**, un innovativo progetto di crittografia che unisce l'informatica alla musicologia. Questo software consente di cifrare e decifrare messaggi testuali utilizzando un sistema polialfabetico ispirato al classico [Cifrario di Vigenère](https://it.wikipedia.org/wiki/Cifrario_di_Vigen%C3%A8), traducendo le lettere non in semplici caratteri, ma in vere e proprie **note e strutture musicali**.
+Benvenuto in **Messaggi in Musica**, un innovativo progetto di cifratura che unisce l'informatica alla musica. Questo software consente di cifrare e decifrare messaggi testuali utilizzando un sistema polialfabetico ispirato al classico [Cifrario di Vigenère](https://it.wikipedia.org/wiki/Cifrario_di_Vigen%C3%A8re), traducendo le lettere non in semplici caratteri, ma in vere e proprie **note e strutture musicali**.
 
-Mentre sul web esistono innumerevoli tool per la cifratura tradizionale, **Messaggi in Musica** colma un vuoto, offrendo un sistema per trasformare messaggi segreti in spartiti musicali riproducibili.
+Mentre sul web esistono innumerevoli tool per la cifratura tradizionale, **Messaggi in Musica** colma un vuoto, offrendo un sistema per trasformare messaggi segreti in spartiti musicali digitali riproducibili.
 
 ---
 
@@ -10,25 +10,25 @@ Mentre sul web esistono innumerevoli tool per la cifratura tradizionale, **Messa
 
 Il progetto si compone di due varianti distinte, capaci di soddisfare sia l'approccio puramente matematico/sperimentale sia quello più melodico e tonale:
 
-1. **🎶 Note Message (Approccio Sperimentale)**
+1. **🎶 Note Message (Approccio Meccanico)**
    * Impiega **singole note musicali** per la cifratura.
    * Produce sonorità particolari, dal tono similare a quello delle avanguardie e dello sperimentalismo musicale.
 2. **🎼 Music Message (Approccio Tonale - Minuetto)**
    * Adopera **intere battute in 3/8**, ispirandosi all'andamento di un minuetto classico.
-   * Si basa sulle regole del celebre *Musikalisches Würfelspiel* per garantire un esito decisamente più "tonale" e piacevole all'ascolto.
+   * Si ispira al gioco musicale *Musikalisches Würfelspiel* (edizione del 1793) per garantire un esito decisamente più "tonale" e piacevole all'ascolto.
 
 ---
 
 ## 🛠️ Tecnologie e Requisiti
 
-I programmi sono stati sviluppati interamente in **Python 3** utilizzando esclusivamente librerie standard, garantendo massima portabilità senza necessità di installare moduli pesanti di terze parti:
+I programmi sono stati sviluppati interamente in **Python 3** utilizzando esclusivamente librerie standard, garantendo massima portabilità senza necessità di installare moduli di terze parti:
 
 > 📥 **Software Consigliato per la riproduzione:**
 > Per visualizzare e ascoltare lo spartito generato (`musica.xml`), si raccomanda caldamente l'uso del programma gratuito e open-source di scrittura musicale **[MuseScore](https://musescore.org/it)**.
 
 ---
 
-## 🗂 Installazione e Avvio
+## 📂 Installazione e Avvio
 
 Per utilizzare il software, segui attentamente questi passi:
 
@@ -54,6 +54,10 @@ L'interfaccia grafica è identica per entrambi i programmi ed è estremamente in
 1. Inserisci nel **campo superiore** la **Chiave** corretta (la stessa usata per la codifica, *solo caratteri alfanumerici*).
 2. Clicca sul tasto azzurro **'Carica musica'** per sfogliare i tuoi file e selezionare il file `.xml` della musica che vuoi decodificare.
 3. Clicca sul tasto **'Decodifica'**: il testo del messaggio originale apparirà magicamente a schermo.
+
+<p align="center">
+  <img src="assets/interfaccia.png" alt="Interfaccia" width="200">
+</p>
 
 ---
 
