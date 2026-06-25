@@ -76,7 +76,7 @@ Analizzando la parte musicale del gioco originale, si nota che molte battute si 
   * **36** battute dedicate alla *prima parte del minuetto*.
   * **36** battute dedicate alla *seconda parte*.
   * **2** battute di ritornello (una per la prima parte del minuetto e una per la seconda).
-  * **1** ultima *battuta finale*.
+  * **1** ultima battuta finale
 * **Vincoli di Cifratura:** Per ragioni di coerenza formale ed estetica musicale, il sistema **esclude dalla cifratura** la battuta iniziale, la battuta finale e le due battute centrali a ridosso del ritornello. In questo modo la struttura del Minuetto classico rimane intatta e riconoscibile all'orecchio.
 
 ---
