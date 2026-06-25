@@ -1,4 +1,4 @@
-# 📜 Messaggi in Musica 🎼
+# 📃 Messaggi in Musica 🎼
 
 Benvenuto in **Messaggi in Musica**, un innovativo progetto di cifratura che unisce l'informatica alla musica. Questo software consente di cifrare e decifrare messaggi testuali utilizzando un sistema polialfabetico ispirato al classico [Cifrario di Vigenère](https://it.wikipedia.org/wiki/Cifrario_di_Vigen%C3%A8re), traducendo le lettere non in semplici caratteri, ma in vere e proprie **note e strutture musicali**.
 
@@ -61,7 +61,7 @@ L'interfaccia grafica è identica per entrambi i programmi ed è estremamente in
 
 ---
 
-## 🎼 Approfondimento Culturale: Il *Musikalisches Würfelspiel*
+## 📜 Approfondimento Culturale: Il *Musikalisches Würfelspiel*
 
 Per la versione **Music Message**, l'ispirazione non è puramente matematica, ma affonda le radici in un documento del XVIII secolo.
 
