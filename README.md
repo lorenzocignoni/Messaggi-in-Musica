@@ -48,12 +48,12 @@ L'interfaccia grafica è identica per entrambi i programmi ed è estremamente in
 3. Clicca sul pulsante verde **'Codifica'**.
 4. Il programma genererà, all'interno della cartella principale, un file denominato `musica.xml`. Questo file può essere aperto immediatamente con **MuseScore** per essere visionato e riprodotto.
 
-🚨 **ATTENZIONE:** Se intendi creare più file musicali, **ricordati di rinominare il file musicale vecchio** prima di avviarne una nuova codifica. In caso contrario, il nuovo file sovrascriverà quello precedente, causandone la perdita irreversibile.
+🚨 **ATTENZIONE:** Se intendi creare più file musicali, **ricordati di rinominare il file musicale vecchio** prima di avviare una nuova codifica. In caso contrario, il nuovo file sovrascriverà quello precedente, causandone la perdita irreversibile.
 
-### 🔵 Fase di Decodifica (Decifratura)
+### 🔵🔴 Fase di Decodifica (Decifratura)
 1. Inserisci nel **campo superiore** la **Chiave** corretta (la stessa usata per la codifica, *solo caratteri alfanumerici*).
-2. Clicca sul tasto azzurro **'Carica musica'** per sfogliare i tuoi file e selezionare il file `.xml` della musica che vuoi decodificare.
-3. Clicca sul tasto **'Decodifica'**: il testo del messaggio originale apparirà magicamente a schermo.
+2. Clicca sul pulsante azzurro **'Carica musica'** per sfogliare i tuoi file e selezionare il file `.xml` della musica che vuoi decodificare.
+3. Clicca sul pulsante rosso **'Decodifica'**: il testo del messaggio originale apparirà magicamente a schermo.
 
 <p align="center">
   <img src="assets/interfaccia.png" alt="Interfaccia" width="400">
@@ -63,9 +63,9 @@ L'interfaccia grafica è identica per entrambi i programmi ed è estremamente in
 
 ## 🎼 Approfondimento Culturale: Il *Musikalisches Würfelspiel*
 
-Per la versione **Music Message**, l'ispirazione non è puramente matematica, ma affonda le radici nella storia della musica aleatoria. 
+Per la versione **Music Message**, l'ispirazione non è puramente matematica, ma affonda le radici in un documento del XVIII secolo.
 
-Il **[Musikalisches Würfelspiel](https://it.wikipedia.org/wiki/Gioco_dei_dadi_musicale)** (ovvero il *"Gioco per comporre musica con i dadi, senza intendersi di musica o di composizione"*) è stato un celebre espediente del XVIII secolo per generare musica in modo semicasuale. Pubblicato in anni diversi e da vari editori, la sua paternità è stata storicamente attribuita a vari compositori, tra cui *Johann Philipp Kirnberger*, *Carl Philipp Emanuel Bach* e, soprattutto, **[Wolfgang Amadeus Mozart](https://it.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart)** (sebbene la responsabilità di quest’ultimo sia oggi fortemente messa in discussione dalla critica).
+Il **[Musikalisches Würfelspiel](https://vmirror.imslp.org/files/imglnks/usimg/7/7c/IMSLP798374-PMLP1260062-attr_mozart_g.270.g.-2.-_Anleitung_Walzer_oder_Schleifer_mit_zwei_Wu-rfeln_zu_componiren.pdf)** (*"Gioco per comporre musica con i dadi, senza intendersi di musica o di composizione"*) è stato un celebre espediente per generare musica in modo semicasuale. Pubblicato in anni diversi e da vari editori, la sua paternità è stata storicamente attribuita a vari compositori, tra cui *Johann Philipp Kirnberger*, *Carl Philipp Emanuel Bach* e, soprattutto, *Wolfgang Amadeus Mozart* (sebbene la responsabilità di quest’ultimo sia fortemente messa in discussione).
 
 ### Struttura Musicale Implementata nel Programma
 Analizzando la parte musicale del gioco originale, si nota che molte battute si ripetono assumendo una precisa funzione strutturale. Per mantenere una coerenza musicale ed evitare un caos tonale, l'algoritmo di **Music Message** adotta le seguenti regole:
@@ -75,19 +75,10 @@ Analizzando la parte musicale del gioco originale, si nota che molte battute si 
   * **10** battute destinate esclusivamente come *battute iniziali*.
   * **36** battute dedicate alla *prima parte del minuetto*.
   * **36** battute dedicate alla *seconda parte*.
-  * **2** battute conclusive (una per la prima parte del minuetto e una per la seconda).
+  * **2** battute di ritornello (una per la prima parte del minuetto e una per la seconda).
   * **1** ultima *battuta finale*.
 * **Vincoli di Cifratura:** Per ragioni di coerenza formale ed estetica musicale, il sistema **esclude dalla cifratura** la battuta iniziale, la battuta finale e le due battute centrali a ridosso del ritornello. In questo modo la struttura del Minuetto classico rimane intatta e riconoscibile all'orecchio.
 
 ---
 
-## 📌 Riferimenti e Fonti Citate
-
-* **Cifrario di Vigenère:** [Wikipedia - Cifrario di Vigenère](https://it.wikipedia.org/wiki/Cifrario_di_Vigen%C3%A8)
-* **Musikalisches Würfelspiel:** [Wikipedia - Gioco dei dadi musicale](https://it.wikipedia.org/wiki/Gioco_dei_dadi_musicale)
-* **Libreria GUI Python:** [Documentazione Ufficiale Tkinter](https://docs.python.org/3/library/tkinter.html)
-* **Software Musicale Consigliato:** [Sito Ufficiale MuseScore](https://musescore.org/)
-* **Wolfgang Amadeus Mozart:** [Biografie e opere su Wikipedia](https://it.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart)
-
----
-*Progetto sviluppato con passione per coniugare l'arte della crittografia al fascino della musica classica.* Keynote e codice sorgente disponibili in questa repository.
+*Progetto sviluppato con passione da Lorenzo Cignoni, studente di Ingegneria Informatica presso il Politecnico di Milano, per coniugare l'arte della crittografia al fascino della musica classica.* Il materiale necessario per i progetti e i due eseguibili sono disponibili in questa repository.
