@@ -81,4 +81,4 @@ Analizzando la parte musicale del gioco originale, si nota che molte battute si 
 
 ---
 
-*Progetto sviluppato con passione da Lorenzo Cignoni, studente di Ingegneria Informatica presso il Politecnico di Milano, per coniugare l'arte della crittografia al fascino della musica classica.* Il materiale necessario per il progetto e i due eseguibili sono disponibili in questa repository.
+*Progetto sviluppato da Lorenzo Cignoni, studente di Ingegneria Informatica presso il Politecnico di Milano, per coniugare l'arte della crittografia al fascino della musica classica.* Il materiale necessario per il progetto e i due eseguibili sono disponibili in questa repository.
