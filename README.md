@@ -66,21 +66,27 @@ Queste coppie, tramite l'uso del **cifrario**, produrranno la codifica di ciascu
 
 ### 🎵 Ottenere la melodia
 
-Come ottenere una musica dalla sequenza di numeri? Sarà necessario formulare una ulteriore corrispondenza tra i numeri da 1 a 36 e 36 valori musicali.
+Come ottenere una musica dalla sequenza di numeri? Sarà necessario formulare una ulteriore corrispondenza tra i numeri (1, 2, ... 36) e 36 valori musicali.
 
-<p align="center">
+Nel programma Note Message, ogni valore numerico che codifica un carattere è associato ad una nota specifica. L'elenco ordinato delle stesse è presentato di seguito.
+
+<div align="center">
   <img src="assets/Note.png" alt="Note" width="100%">
-</p>
-<p align="center">
-  Sequenza di note, ordinate da 1 a 36, che codificano i 36 possibili valori numerici nel programma Note Message <br><br><br>
-</p>
+  <p>
+    Sequenza di note, ordinate da 1 a 36, che codificano i 36 possibili valori numerici della codifica.
+  </p>
+</div>
 
-<p align="center">
+---
+
+Nel programma Music Message, ogni valore numerico che codifica un carattere è associato ad una intera battuta in 3/8, secondo l'andamento del minuetto classico. Le battute sono state selezionate da un gioco musicale, il *Musikalisches Würfelspiel* (edizione del 1793), di cui si parlerà più approfonditamente nel prossimo paragrafo. Bisogna inoltre aggiungere che questo programma fa uso di molteplici "batterie" di battute, a seconda che si stia codificando la prima o la seconda parte del messaggio. Una selezione di 36 battute codificherà la prima metà del messaggio, mentre una ulteriore selezione di 36 battute codificherà la seconda metà del messaggio (collo scopo di preservare l'andamento del minuetto). L'elenco ordinato di battute di una di queste selezioni è presentato di seguito.
+
+<div align="center">
   <img src="assets/Battute.png" alt="Battute" width="100%">
-</p>
-<p align="center">
-  Sequenza di 36 battute, estratte dal documento Musikalisches Würfelspiel, che codificano i 36 possibili valori numerici della prima parte del messaggio nel programma Note Message <br><br><br>
-</p>
+  <p>
+    Sequenza di 36 battute, estratte dal documento Musikalisches Würfelspiel, che codificano i 36 possibili valori numerici della prima parte del messaggio.
+  </p>
+</div>
 
 ---
 
