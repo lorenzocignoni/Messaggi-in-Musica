@@ -69,18 +69,38 @@ Queste coppie, tramite l'uso del **cifrario**, produrranno la codifica di ciascu
 Come ottenere una musica dalla sequenza di numeri? Sarà necessario formulare una ulteriore corrispondenza tra i numeri da 1 a 36 e 36 valori musicali.
 
 <p align="center">
-  <img src="assets/Note.png" alt="Interfaccia" width="100%">
+  <img src="assets/Note.png" alt="Note" width="100%">
 </p>
 <p align="center">
   Sequenza di note, ordinate da 1 a 36, che codificano i 36 possibili valori numerici nel programma Note Message <br><br><br>
 </p>
 
 <p align="center">
-  <img src="assets/interfaccia.png" alt="Interfaccia" width="400">
+  <img src="assets/Battute.png" alt="Battute" width="100%">
 </p>
 <p align="center">
-  Modello di selezione delle battute che codificano i 36 possibili valori numerici nel programma **Music Message <br><br><br>
+  Sequenza di 36 battute, estratte dal documento Musikalisches Würfelspiel, che codificano i 36 possibili valori numerici della prima parte del messaggio nel programma Note Message <br><br><br>
 </p>
+
+---
+
+## 📜 Approfondimento: Il *Musikalisches Würfelspiel*
+
+Per la versione **Music Message**, l'ispirazione non è puramente matematica, ma affonda le radici in un documento del XVIII secolo.
+
+Il **[Musikalisches Würfelspiel](https://vmirror.imslp.org/files/imglnks/usimg/7/7c/IMSLP798374-PMLP1260062-attr_mozart_g.270.g.-2.-_Anleitung_Walzer_oder_Schleifer_mit_zwei_Wu-rfeln_zu_componiren.pdf)** (*"Gioco per comporre musica con i dadi, senza intendersi di musica o di composizione"*) è stato un celebre espediente per generare musica in modo semicasuale. Pubblicato in anni diversi e da vari editori, la sua paternità è stata storicamente attribuita a vari compositori, tra cui *Johann Philipp Kirnberger*, *Carl Philipp Emanuel Bach* e, soprattutto, *Wolfgang Amadeus Mozart* (sebbene la responsabilità di quest’ultimo sia fortemente messa in discussione).
+
+### Struttura Musicale Implementata nel Programma Music Message
+Analizzando la parte musicale del gioco originale, si nota che molte battute si ripetono assumendo una precisa funzione strutturale. Per mantenere una coerenza musicale ed evitare un caos tonale, l'algoritmo di **Music Message** adotta le seguenti regole:
+
+* **Matrice di Selezione:** Invece di singole note, vengono associate **intere battute** selezionate direttamente dal gioco musicale (per un totale di **85 battute** scelte).
+* **Distribuzione delle Battute:**
+  * **10** battute destinate esclusivamente come *battute iniziali*.
+  * **36** battute dedicate alla *prima parte del minuetto*.
+  * **36** battute dedicate alla *seconda parte*.
+  * **2** battute di ritornello (una per la prima parte del minuetto e una per la seconda).
+  * **1** ultima battuta finale
+* **Vincoli di Cifratura:** Per ragioni di coerenza formale ed estetica musicale, il sistema **esclude dalla cifratura** la battuta iniziale, la battuta finale e le due battute centrali a ridosso del ritornello. In questo modo la struttura generale della composizione resta riconoscibile.
 
 ---
 
