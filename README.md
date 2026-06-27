@@ -19,6 +19,71 @@ Il progetto si compone di due varianti distinte, capaci di soddisfare sia l'appr
 
 ---
 
+## 🔑 Cifrario e Parola chiave 
+
+Cifratura indica la trasformazione di una sequenza di caratteri (come un testo) in un'altra, apparentemente incomprensibile. Essa deve avvenire attraverso un metodo algoritmico (meccanico e ben definito) che possa essere reversibile solo per coloro che possiedono delle informazioni segrete. <br>
+Una cifratura potrebbe trasformare un testo in una sequenza di numeri. <br>
+Alla base della cifratura ci sono i **Sistemi alfabetici** che mostrano la corrispondenza tra i caratteri originali e quelli nuovi. Di seguito un esempio:
+
+| *Sistema alfabetico* |
+|:--------------------:|
+| `A B C ... Z 1 2 3 ... 9 0` |
+
+In questo caso possiamo vedere come le corrispondenze `(carattere,numero)` siano `(A,1)` , `(B,2)` , `(C,3)` , ... <br>
+Si può subito notare che l'uso di un solo sistema alfabetico è del tutto inutile: si tratta semplicemente di una rinominazione dei caratteri, dove è sufficiente conoscere una sola corrispondenza, per poter trovare tutte le altre.
+
+Affinché la cifratura sia efficace è necessario adoperare **molti sistemi alfabetici**, ciscuno identificato da una **Lettera Chiave**. L'insieme tabellare di tutti i sistemi alfabetici è chiamato **Cifrario** <br>
+Il cifrario adoperato all'interno di questo progetto è visionabile nel file `Cifrario.txt` ed ha la seguente struttura:
+
+| *Lettera Chiave* | *Sistema alfabetico* |
+|:----------------:|:--------------------:|
+| `B` | `A B C ... Z 1 ... 9 0` |
+| `D` | `B C ... Z 1 ... 9 0 A` |
+| `F` | `C ... Z 1 ... 9 0 A B` |
+| ... | eccetera |
+| `E` | `8 9 0 A ... Z 1 ... 7` |
+| `C` | `9 0 A ... Z 1 ... 7 8` |
+| `A` | `0 A ... Z 1 ... 7 8 9` |
+
+La domanda che sorge spontanea è la seguente: come muoversi da un sistema alfabetico all'altro? Serve una sequenza di lettere chiave, ossia una **Parola Chiave**. <br>
+`Cifrario + Parola Chiave` costituiscono le informazioni segrete che permettono ad un soggetto di effettuare correttamente sia la cifratura che il suo processo inverso, la decifratura.
+
+---
+
+## 📝 Processo di cifratura
+
+Supponiamo di voler cifrare il **messaggio** `Attacco settore 4 ore 11:30` con la **Parola Chiave** `Perseo`. <br>
+
+### 🧮 Ottenere la sequenza numerica
+
+Questo significa che ciascun carattere del messaggio sarà cifrato con uno dei sistemi alfabetici della parola chiave. In particolare si avrà: <br>
+`Attacco settore 4 ore 11:30` <br>
+`PerseoP erseoPe r seo Pe rs`
+
+La parola chiave viene ripetuta per associare una sua lettera ad ogni carattere del messaggio, creando così le corrispondenze `(Lettera,Alfabeto)` come ad esempio `(A,P)` , `(T,E)` , `(T,R)` eccetera...
+
+Queste coppie, tramite l'uso del **cifrario**, produrranno la codifica di ciascun carattere. Ad esempio: La lettera `A` , nell'alfabeto `P` è codificata col numero `30` e così via per tutti i caratteri. Il prodotto finale sarà una sequenza di numeri.
+
+### 🎵 Ottenere la melodia
+
+Come ottenere una musica dalla sequenza di numeri? Sarà necessario formulare una ulteriore corrispondenza tra i numeri da 1 a 36 e 36 valori musicali.
+
+<p align="center">
+  <img src="assets/interfaccia.png" alt="Interfaccia" width="400">
+</p>
+<p align="center">
+  Sequenza di note, ordinate da 1 a 36, che codificano i 36 possibili valori numerici nel programma Note Message <br><br><br>
+</p>
+
+<p align="center">
+  <img src="assets/interfaccia.png" alt="Interfaccia" width="400">
+</p>
+<p align="center">
+  Modello di selezione delle battute che codificano i 36 possibili valori numerici nel programma **Music Message <br><br><br>
+</p>
+
+---
+
 ## 🛠️ Tecnologie e Requisiti
 
 I programmi sono stati sviluppati interamente in **Python 3** utilizzando esclusivamente librerie standard, garantendo massima portabilità senza necessità di installare moduli di terze parti:
@@ -58,26 +123,6 @@ L'interfaccia grafica è identica per entrambi i programmi ed è estremamente in
 <p align="center">
   <img src="assets/interfaccia.png" alt="Interfaccia" width="400">
 </p>
-
----
-
-## 📜 Approfondimento Culturale: Il *Musikalisches Würfelspiel*
-
-Per la versione **Music Message**, l'ispirazione non è puramente matematica, ma affonda le radici in un documento del XVIII secolo.
-
-Il **[Musikalisches Würfelspiel](https://vmirror.imslp.org/files/imglnks/usimg/7/7c/IMSLP798374-PMLP1260062-attr_mozart_g.270.g.-2.-_Anleitung_Walzer_oder_Schleifer_mit_zwei_Wu-rfeln_zu_componiren.pdf)** (*"Gioco per comporre musica con i dadi, senza intendersi di musica o di composizione"*) è stato un celebre espediente per generare musica in modo semicasuale. Pubblicato in anni diversi e da vari editori, la sua paternità è stata storicamente attribuita a vari compositori, tra cui *Johann Philipp Kirnberger*, *Carl Philipp Emanuel Bach* e, soprattutto, *Wolfgang Amadeus Mozart* (sebbene la responsabilità di quest’ultimo sia fortemente messa in discussione).
-
-### Struttura Musicale Implementata nel Programma
-Analizzando la parte musicale del gioco originale, si nota che molte battute si ripetono assumendo una precisa funzione strutturale. Per mantenere una coerenza musicale ed evitare un caos tonale, l'algoritmo di **Music Message** adotta le seguenti regole:
-
-* **Matrice di Selezione:** Invece di singole note, vengono associate **intere battute** selezionate direttamente dal gioco musicale (per un totale di **85 battute** scelte).
-* **Distribuzione delle Battute:**
-  * **10** battute destinate esclusivamente come *battute iniziali*.
-  * **36** battute dedicate alla *prima parte del minuetto*.
-  * **36** battute dedicate alla *seconda parte*.
-  * **2** battute di ritornello (una per la prima parte del minuetto e una per la seconda).
-  * **1** ultima battuta finale
-* **Vincoli di Cifratura:** Per ragioni di coerenza formale ed estetica musicale, il sistema **esclude dalla cifratura** la battuta iniziale, la battuta finale e le due battute centrali a ridosso del ritornello. In questo modo la struttura del Minuetto classico rimane intatta e riconoscibile all'orecchio.
 
 ---
 
