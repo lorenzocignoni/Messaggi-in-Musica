@@ -69,7 +69,7 @@ Queste coppie, tramite l'uso del **cifrario**, produrranno la codifica di ciascu
 Come ottenere una musica dalla sequenza di numeri? Sarà necessario formulare una ulteriore corrispondenza tra i numeri da 1 a 36 e 36 valori musicali.
 
 <p align="center">
-  <img src="assets/interfaccia.png" alt="Interfaccia" width="400">
+  <img src="assets/note.png" alt="Interfaccia" width="800">
 </p>
 <p align="center">
   Sequenza di note, ordinate da 1 a 36, che codificano i 36 possibili valori numerici nel programma Note Message <br><br><br>
