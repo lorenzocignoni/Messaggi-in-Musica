@@ -19,6 +19,32 @@ Il progetto si compone di due varianti distinte, capaci di soddisfare sia l'appr
 
 ---
 
+## 📖 Esempi preliminari
+
+### Note Message
+
+<div align="center">
+  <img src="assets/Es-note.png" alt="Note" width="100%">
+  <audio controls>
+    <source src="assets/Es-note.ogg" type="audio/ogg">
+    <source src="assets/Es-note.mp3" type="audio/mpeg">
+  Il tuo browser non supporta l'elemento audio.
+  </audio>
+</div>
+
+### Music Message
+
+<div align="center">
+  <img src="assets/Es-music.png" alt="Music" width="100%">
+  <audio controls>
+    <source src="assets/Es-music.ogg" type="audio/ogg">
+    <source src="assets/Es-music.mp3" type="audio/mpeg">
+  Il tuo browser non supporta l'elemento audio.
+  </audio>
+</div>
+
+---
+
 ## 🔑 Cifrario e Parola chiave 
 
 Cifratura indica la trasformazione di una sequenza di caratteri (come un testo) in un'altra, apparentemente incomprensibile. Essa deve avvenire attraverso un metodo algoritmico (meccanico e ben definito) che possa essere reversibile solo per coloro che possiedono delle informazioni segrete. <br>
