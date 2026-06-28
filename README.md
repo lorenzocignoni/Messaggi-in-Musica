@@ -19,17 +19,24 @@ Il progetto si compone di due varianti distinte, capaci di soddisfare sia l'appr
 
 ---
 
-## 📖 Esempi preliminari
+## 📖 Esempi di messaggi segreti
 
-### Note Message
-
-<div align="center">
-</div>
-
-### Music Message
-
-<div align="center">
-</div>
+<table>
+  <tr>
+  <td width="50%">
+  
+  ### Note Message
+  
+  <p align="center">Testo molto bello </p> <br>
+  </td>
+  <td width="50%">
+  
+  ### Music Message
+  
+  <p align="center">Testo molto bello </p> <br>
+  </td>
+  </tr>
+</table>
 
 ---
 
