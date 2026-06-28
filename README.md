@@ -26,14 +26,12 @@ Il progetto si compone di due varianti distinte, capaci di soddisfare sia l'appr
   <td width="50%">
   
   ### Note Message
-  
-  <p align="center">Testo molto bello </p> <br>
+  https://github.com/user-attachments/assets/a75f19f9-585a-4549-b764-9b7df57cd166
   </td>
   <td width="50%">
   
   ### Music Message
-  
-  <p align="center">Testo molto bello </p> <br>
+  https://github.com/user-attachments/assets/9335fc5d-38b1-4d18-b5e5-009e1739cf7c
   </td>
   </tr>
 </table>
