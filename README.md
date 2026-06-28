@@ -24,13 +24,11 @@ Il progetto si compone di due varianti distinte, capaci di soddisfare sia l'appr
 ### Note Message
 
 <div align="center">
-  
 </div>
 
 ### Music Message
 
 <div align="center">
-  
 </div>
 
 ---
