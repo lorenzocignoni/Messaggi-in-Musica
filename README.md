@@ -24,23 +24,13 @@ Il progetto si compone di due varianti distinte, capaci di soddisfare sia l'appr
 ### Note Message
 
 <div align="center">
-  <img src="assets/Es-note.png" alt="Note" width="100%">
-  <audio controls>
-    <source src="assets/Es-note.ogg" type="audio/ogg">
-    <source src="assets/Es-note.mp3" type="audio/mpeg">
-  Il tuo browser non supporta l'elemento audio.
-  </audio>
+  
 </div>
 
 ### Music Message
 
 <div align="center">
-  <img src="assets/Es-music.png" alt="Music" width="100%">
-  <audio controls>
-    <source src="assets/Es-music.ogg" type="audio/ogg">
-    <source src="assets/Es-music.mp3" type="audio/mpeg">
-  Il tuo browser non supporta l'elemento audio.
-  </audio>
+  
 </div>
 
 ---
